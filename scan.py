@@ -28,7 +28,8 @@ lines = [line.strip() for line in open(filename)]
 
 targets = ''
 for line in lines:
-	targets += '<host>' + line + '</host>'
+	#targets += '<host>' + line + '</host>'
+        targets += '<range from=\"' + line + '\" to=\"\"/>'
 
 # Nespose API session login
 session = nexlogin()
